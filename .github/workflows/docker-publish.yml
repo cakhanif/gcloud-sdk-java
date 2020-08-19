@@ -17,7 +17,7 @@ env:
   # TODO: Change variable to your image's name.
   TZ: Asia/Jakarta
   IMAGE_NAME: gcloud-sdk-java
-  HUB_IMAGE_NAME: cakhanif/gcloud-sdk-javacakhan
+  HUB_IMAGE_NAME: cakhanif/gcloud-sdk-java
 jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/

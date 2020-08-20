@@ -47,11 +47,8 @@ jobs:
           run: docker build . --file Dockerfile --tag $HUB_IMAGE_NAME
         
         - name: Login to Docker Registry
-          run: |
-            #Logout from previous stage
-            docker logout
-            
-            #and login again
+          run: |           
+            # Login Docker Registry
             echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u cakhanif --password-stdin
 
         - name: Push to Docker Registry
